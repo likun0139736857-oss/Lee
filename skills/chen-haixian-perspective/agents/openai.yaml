@@ -1,0 +1,4 @@
+interface:
+  display_name: "陈海贤视角"
+  short_description: "用陈海贤的自我发展心理学视角分析改变、关系、家庭与行动困境。"
+  default_prompt: "请用陈海贤的视角，帮我分析这个自我发展或关系问题。"
