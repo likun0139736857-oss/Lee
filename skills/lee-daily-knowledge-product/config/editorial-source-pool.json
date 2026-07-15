@@ -1,0 +1,73 @@
+{
+  "priority_accounts": [
+    {
+      "canonical_name": "红餐网",
+      "aliases": ["红餐网"],
+      "focus": ["餐饮", "连锁", "消费"]
+    },
+    {
+      "canonical_name": "笔记侠",
+      "aliases": ["笔记侠"],
+      "focus": ["商业", "管理", "认知"]
+    },
+    {
+      "canonical_name": "餐企老板内参",
+      "aliases": ["餐企老板内参", "餐企内参"],
+      "focus": ["餐饮", "经营", "案例"]
+    },
+    {
+      "canonical_name": "咖门",
+      "aliases": ["咖门", "咖门新消费"],
+      "focus": ["茶饮", "咖啡", "消费"]
+    },
+    {
+      "canonical_name": "红餐智库",
+      "aliases": ["红餐智库"],
+      "focus": ["餐饮", "研究", "数据"]
+    },
+    {
+      "canonical_name": "混沌学园",
+      "aliases": ["混沌学园", "混沌创新"],
+      "focus": ["创新", "商业", "认知"]
+    },
+    {
+      "canonical_name": "刘润",
+      "aliases": ["刘润", "刘润公众号"],
+      "focus": ["商业", "管理", "趋势"]
+    },
+    {
+      "canonical_name": "L先生说",
+      "aliases": ["L先生说"],
+      "focus": ["认知", "学习", "成长"]
+    },
+    {
+      "canonical_name": "晚点LatePost",
+      "aliases": ["晚点LatePost", "晚点 LatePost", "晚点LatePost官方", "晚点"],
+      "focus": ["公司", "科技", "商业"]
+    },
+    {
+      "canonical_name": "增长研习社",
+      "aliases": ["增长研习社"],
+      "focus": ["增长", "运营", "案例"]
+    }
+  ],
+  "enterprise_case_cues": [
+    "案例",
+    "复盘",
+    "增长",
+    "转型",
+    "组织变革",
+    "商业模式",
+    "失败",
+    "现金流",
+    "战略调整"
+  ],
+  "candidate_cap_per_account": 2,
+  "source_roles": {
+    "priority_wechat": "topic_lead",
+    "creator_buddy": "topic_lead",
+    "primary_public_source": "fact_evidence",
+    "independent_reliable_source": "fact_evidence"
+  }
+}
+

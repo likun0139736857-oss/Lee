@@ -1,0 +1,5 @@
+interface:
+  display_name: "Lee 连锁智库日更"
+  short_description: "从重点公众号、企业案例与观点中生成已核验、已匿名化的待审稿"
+  default_prompt: "Use $lee-daily-knowledge-product to find current topic leads, verify public facts and disputes, and produce an anonymized review-only Lee article."
+
