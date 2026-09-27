@@ -1,0 +1,86 @@
+{
+  "reviewed_on": "2026-09-26",
+  "sources": [
+    {
+      "id": "SP01",
+      "path": "D:/BaiduSyncdisk/raw/01 连锁智库/05 经营陪跑/艾尔文网咖/艾尔文沟通动作索引_2026-09-26.md",
+      "source_date": "2026-09-26",
+      "evidence_type": "截图整理索引，未独立核验截图",
+      "read_scope": "全文",
+      "reviewed_on": "2026-09-26",
+      "sha256": "2fb490139f1a14b04f31f4f107ee817075d9dc3530e4cf0c8def6b134207db95"
+    },
+    {
+      "id": "SP02",
+      "path": "D:/BaiduSyncdisk/raw/01 连锁智库/05 经营陪跑/艾尔文网咖/更新服务包/0904内部校准文件/【内部校准版】艾尔文90天经营顾问服务方案_2026-09-04.docx",
+      "source_date": "2026-09-04",
+      "evidence_type": "内部方案，非执行或合同证明",
+      "read_scope": "DOCX正文全文",
+      "reviewed_on": "2026-09-26",
+      "sha256": "c9dd82722044e62c16fb8e2af45929389b27106942655d1f4e14cc6ebbc3b884"
+    },
+    {
+      "id": "SP03",
+      "path": "D:/BaiduSyncdisk/raw/02 个人资料集/06 塔斯汀/09_塔斯汀加盟案例库/李坤_塔斯汀加盟管理中心建设复盘与可复用方法论.md",
+      "source_date": "2026-09-13",
+      "evidence_type": "历史资料二次综合，含整理者补强建议",
+      "read_scope": "定向阅读经验、模型、反面经验、工具及来源；非全部底层原件审计",
+      "reviewed_on": "2026-09-26",
+      "sha256": "120e874a8576be0d930d59949869aa45f0ab5d5f0580c4c115a78581ccd930a7"
+    },
+    {
+      "id": "SP04",
+      "path": "D:/BaiduSyncdisk/raw/02 个人资料集/06 塔斯汀/02_加盟管理中心建设/加盟商管理部职责丨0925.docx",
+      "source_date": "未明确；正文含2024/2025",
+      "evidence_type": "历史职责和规划",
+      "read_scope": "DOCX文本全文；图片表格未读取",
+      "reviewed_on": "2026-09-26",
+      "sha256": "69de61609854ec8a2b9807683e58ab0b216d16559973ab4809cc2fa5356d6d44"
+    },
+    {
+      "id": "SP05",
+      "path": "D:/BaiduSyncdisk/raw/01 连锁智库/04 CEO教练1V1/Lee_CEO教练2.0_完整包/04_客户沟通服务与定价.md",
+      "source_date": "正文未明确",
+      "evidence_type": "商业应用建议，待付费验证",
+      "read_scope": "全文",
+      "reviewed_on": "2026-09-26",
+      "sha256": "8ca5afd391d74eea23bbfcb740250e4e013fc6299834613661a2815ddb426c8c"
+    },
+    {
+      "id": "SP06",
+      "path": "D:/BaiduSyncdisk/raw/01 连锁智库/04 CEO教练1V1/Lee_CEO教练2.0_完整包/05_可复用工具库/08-关系系统图.md",
+      "source_date": "正文未明确",
+      "evidence_type": "方法工具",
+      "read_scope": "全文",
+      "reviewed_on": "2026-09-26",
+      "sha256": "4b2b9d0dd4e391c9585389004fff83fb634318d55fb0598c3dfcb7197d0ca597"
+    },
+    {
+      "id": "SP07",
+      "path": "D:/BaiduSyncdisk/raw/01 连锁智库/04 CEO教练1V1/Lee_CEO教练2.0_完整包/05_可复用工具库/06-容器设计卡.md",
+      "source_date": "正文未明确",
+      "evidence_type": "方法工具",
+      "read_scope": "全文",
+      "reviewed_on": "2026-09-26",
+      "sha256": "e6e112942ed707931a40c76bc0bf336e43e6aa28cdb4f34db16bf1ef0a44c7d6"
+    },
+    {
+      "id": "SP08",
+      "path": "D:/BaiduSyncdisk/raw/07 C无限游戏/公约府9.0/会议纪要/C立方·公约府9.0年度启动会议纪要.html",
+      "source_date": "6月16日；待办含2026日期",
+      "evidence_type": "会议纪要与计划，期限有分歧",
+      "read_scope": "HTML正文全文；未核对录音",
+      "reviewed_on": "2026-09-26",
+      "sha256": "abfa73f3ec39c77c818a80c010f082097a2f1122ea034fdb9751112efe289b58"
+    },
+    {
+      "id": "SP09",
+      "path": "D:/BaiduSyncdisk/raw/07 C无限游戏/公约府9.0/会议纪要/7月28日丨纪要丨手账项目复盘会.docx",
+      "source_date": "7月28日；文件名未标年",
+      "evidence_type": "会议自报复盘与计划",
+      "read_scope": "DOCX文本全文；未核对逐字稿及实际交付",
+      "reviewed_on": "2026-09-26",
+      "sha256": "0073484cc35743c78e10194d8bf9631d1290e0864860d0d96aba2dc7a9c708e8"
+    }
+  ]
+}

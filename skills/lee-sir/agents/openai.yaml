@@ -1,0 +1,6 @@
+interface:
+  display_name: "Lee sir"
+  short_description: "按李坤的原则形成明确决策，在授权内执行，并根据真实反馈持续校准"
+  default_prompt: "请使用 $lee-sir，按我的原则替我判断当前问题，在授权范围内推进，并吸收我对决策的反馈。"
+policy:
+  allow_implicit_invocation: true

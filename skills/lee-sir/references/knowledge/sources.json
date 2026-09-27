@@ -1,0 +1,356 @@
+{
+  "baseline": "2026-09-26",
+  "sources": [
+    {
+      "id": "S01",
+      "path": "D:/BaiduSyncdisk/wiki/tool/第一性原理.md",
+      "kind": "工具正文",
+      "read_scope": "全文",
+      "reviewed_on": "2026-09-26",
+      "source_mtime": "2026-09-12T19:23:03",
+      "sha256": "59d066dcaae24ca1c1a21ce1995610305be66e18c44b822f664312d0f89a4c43",
+      "modules": [
+        "K01"
+      ]
+    },
+    {
+      "id": "S02",
+      "path": "D:/BaiduSyncdisk/wiki/tool/事实核查.md",
+      "kind": "工具正文",
+      "read_scope": "全文",
+      "reviewed_on": "2026-09-26",
+      "source_mtime": "2026-09-12T19:23:03",
+      "sha256": "5c7056445ce4f61e1448730b178d8712b9d1f2347e6aa409eaaa551ec80b4f93",
+      "modules": [
+        "K01"
+      ]
+    },
+    {
+      "id": "S03",
+      "path": "D:/BaiduSyncdisk/wiki/tool/双向钢人论证.md",
+      "kind": "工具正文",
+      "read_scope": "全文",
+      "reviewed_on": "2026-09-26",
+      "source_mtime": "2026-09-12T19:23:03",
+      "sha256": "8466d81c94278aa5249c0c1830b77b394defbc60a98ab2b13d5727035a82fada",
+      "modules": [
+        "K01"
+      ]
+    },
+    {
+      "id": "S04",
+      "path": "D:/BaiduSyncdisk/wiki/sources/ML50-044-评判一件事是否值得做的采铜法则.md",
+      "kind": "图卡转译",
+      "read_scope": "全文；源采铜，制李坤",
+      "reviewed_on": "2026-09-26",
+      "source_mtime": "2026-09-13T10:24:38",
+      "sha256": "ddf23f827eb70d9dc20970d7392446508ba164a2f01f45d6030d637a0c277aa5",
+      "modules": [
+        "K01",
+        "K10"
+      ]
+    },
+    {
+      "id": "S05",
+      "path": "D:/BaiduSyncdisk/wiki/tool/最小实验替代空想.md",
+      "kind": "工具正文",
+      "read_scope": "全文",
+      "reviewed_on": "2026-09-26",
+      "source_mtime": "2026-09-12T19:23:03",
+      "sha256": "6003f87f9d44a3da4bd1f78c04581a44a7608e8e9f712a4c5e70208d5b67424e",
+      "modules": [
+        "K01"
+      ]
+    },
+    {
+      "id": "S06",
+      "path": "D:/BaiduSyncdisk/wiki/tool/资深加盟管理专家与连锁经营顾问必知必会的100个思维模型.md",
+      "kind": "二次汇编",
+      "read_scope": "100项标题；正文选读01—18、19、22、24—28、30—32、34、40、41、43、45—48、51、56、58、59、61、63、70—72、74、81、84、85、86、90、91、93、96、98、100；其他编号仅作后续检索线索",
+      "reviewed_on": "2026-09-26",
+      "source_mtime": "2026-09-16T11:48:28",
+      "sha256": "e839626306d639d5433ee8a3eee20f781384006362800def2366511bd6cb8f2b",
+      "modules": [
+        "K01",
+        "K02",
+        "K03",
+        "K04",
+        "K05",
+        "K06",
+        "K07",
+        "K08",
+        "K09"
+      ]
+    },
+    {
+      "id": "S07",
+      "path": "D:/BaiduSyncdisk/wiki/concepts/单店盈利增长.md",
+      "kind": "概念整理",
+      "read_scope": "全文",
+      "reviewed_on": "2026-09-26",
+      "source_mtime": "2026-08-24T18:37:07",
+      "sha256": "76a84a90ab4255c0bb8c83223cb6fa9545f3fe39f13059d691327f4aaee01e66",
+      "modules": [
+        "K02",
+        "K03",
+        "K08"
+      ]
+    },
+    {
+      "id": "S08",
+      "path": "D:/BaiduSyncdisk/wiki/concepts/创业与组织方法.md",
+      "kind": "概念与导航",
+      "read_scope": "核心正文及来源入口，末尾文章目录不作为正文证据",
+      "reviewed_on": "2026-09-26",
+      "source_mtime": "2026-08-24T23:36:00",
+      "sha256": "2babc4222048d0ab17a9ac2298bcdaf5d18ca251699949cfd6af63e800969b47",
+      "modules": [
+        "K02"
+      ]
+    },
+    {
+      "id": "S09",
+      "path": "D:/BaiduSyncdisk/wiki/concepts/连锁加盟第一性原理.md",
+      "kind": "概念整理",
+      "read_scope": "全文；部分表达存在使用限制",
+      "reviewed_on": "2026-09-26",
+      "source_mtime": "2026-08-23T15:41:24",
+      "sha256": "e75355c73018537553a5deef990bde503bc2fd7820653300071953e3bdd2855c",
+      "modules": [
+        "K02",
+        "K03"
+      ]
+    },
+    {
+      "id": "S10",
+      "path": "D:/BaiduSyncdisk/wiki/tool/品类重生七步法.md",
+      "kind": "课程结构化改编",
+      "read_scope": "全文；本次未读库外原逐字稿",
+      "reviewed_on": "2026-09-26",
+      "source_mtime": "2026-09-16T18:38:07",
+      "sha256": "135eda8a197a68be0e5a0448b875d6aabf52ba0a61170eed96c54915e735e347",
+      "modules": [
+        "K02",
+        "K05"
+      ]
+    },
+    {
+      "id": "S11",
+      "path": "D:/BaiduSyncdisk/wiki/concepts/韵糖居菜单结构与毛利.md",
+      "kind": "日期性案例整理",
+      "read_scope": "全文；未在本次重算原始工作簿",
+      "reviewed_on": "2026-09-26",
+      "source_mtime": "2026-08-24T18:37:07",
+      "sha256": "0fe4be1e537524cf8841b96ec40fedcdc18303daa9712c38565a49365497c1dc",
+      "modules": [
+        "K03",
+        "K04"
+      ]
+    },
+    {
+      "id": "S12",
+      "path": "D:/BaiduSyncdisk/wiki/concepts/食品饮料与供应链.md",
+      "kind": "概念与导航",
+      "read_scope": "全文；报告清单未逐份读取",
+      "reviewed_on": "2026-09-26",
+      "source_mtime": "2026-08-22T20:33:12",
+      "sha256": "c2f71fe82d2248df047b7c91fc8781215d3c1d26ec83e8012fcb2f738f51d1a4",
+      "modules": [
+        "K04"
+      ]
+    },
+    {
+      "id": "S13",
+      "path": "D:/BaiduSyncdisk/wiki/concepts/消费者与品牌营销.md",
+      "kind": "概念与导航",
+      "read_scope": "全文；报告清单未逐份读取",
+      "reviewed_on": "2026-09-26",
+      "source_mtime": "2026-08-24T23:36:00",
+      "sha256": "d79c8b4488e09240ff429cf130324038e75226d1ed7b032bcc5997c6abf97974",
+      "modules": [
+        "K05"
+      ]
+    },
+    {
+      "id": "S14",
+      "path": "D:/BaiduSyncdisk/wiki/concepts/加盟商治理与加委会.md",
+      "kind": "历史机制汇总",
+      "read_scope": "全文；不是现行制度证明",
+      "reviewed_on": "2026-09-26",
+      "source_mtime": "2026-08-31T11:14:28",
+      "sha256": "a626b0315dcc94566e595eb4b8ab763013c01e68489af934f6c5561a9ca0d1c6",
+      "modules": [
+        "K06"
+      ]
+    },
+    {
+      "id": "S15",
+      "path": "D:/BaiduSyncdisk/wiki/tool/店长STORE五力模型.md",
+      "kind": "课程工具整理",
+      "read_scope": "全文；源王璞课程",
+      "reviewed_on": "2026-09-26",
+      "source_mtime": "2026-08-24T18:37:07",
+      "sha256": "b2b8ba70984b8d0a0ebddef87563cf650f31409be4db1d106f71acfd49ffdab2",
+      "modules": [
+        "K07"
+      ]
+    },
+    {
+      "id": "S16",
+      "path": "D:/BaiduSyncdisk/wiki/concepts/培训管理体系.md",
+      "kind": "主题导航",
+      "read_scope": "全文；分类结构不代表所有下层课件已读",
+      "reviewed_on": "2026-09-26",
+      "source_mtime": "2026-09-03T18:49:45",
+      "sha256": "18fc6ba8e93f60468dff680933a925b757a0658bdc577bb078e1942f42431487",
+      "modules": [
+        "K07"
+      ]
+    },
+    {
+      "id": "S17",
+      "path": "D:/BaiduSyncdisk/wiki/tool/企业读书会.md",
+      "kind": "历史SOP结构化改编",
+      "read_scope": "全文；原图未在本次重新检查",
+      "reviewed_on": "2026-09-26",
+      "source_mtime": "2026-09-12T23:46:30",
+      "sha256": "01ece6730d6abbb35f300769094ec6e34d6c26e05e739d060c4bcb48a07ed9fd",
+      "modules": [
+        "K07"
+      ]
+    },
+    {
+      "id": "S18",
+      "path": "D:/BaiduSyncdisk/wiki/tool/吐槽会.md",
+      "kind": "历史会议机制改编",
+      "read_scope": "全文；不代表已验证独创模型",
+      "reviewed_on": "2026-09-26",
+      "source_mtime": "2026-09-12T23:31:27",
+      "sha256": "63c0cf39d029163fc56b1a7d30725cfc2f81a73df131ebbd3c6e94cc9b6125e8",
+      "modules": [
+        "K07",
+        "K10"
+      ]
+    },
+    {
+      "id": "S19",
+      "path": "D:/BaiduSyncdisk/wiki/concepts/C无限游戏学习体系.md",
+      "kind": "主题导航",
+      "read_scope": "全文；不证明草案已通过",
+      "reviewed_on": "2026-09-26",
+      "source_mtime": "2026-09-02T18:34:48",
+      "sha256": "29d965c7eba3888a7ca9b5d2b7df8add9927029694a6bb4f02510269ce20955d",
+      "modules": [
+        "K07"
+      ]
+    },
+    {
+      "id": "S20",
+      "path": "D:/BaiduSyncdisk/wiki/concepts/食安与QSC门店运营.md",
+      "kind": "历史机制概括",
+      "read_scope": "全文；不充当当前法律和食安标准",
+      "reviewed_on": "2026-09-26",
+      "source_mtime": "2026-08-31T11:14:28",
+      "sha256": "151e1d6954a35ce3eab31a101a6f1da6ddd0d2058be136efb421bfec3ad727f2",
+      "modules": [
+        "K08"
+      ]
+    },
+    {
+      "id": "S21",
+      "path": "D:/BaiduSyncdisk/raw/01 连锁智库/04 CEO教练1V1/Lee_CEO教练2.0_完整包/01_方法论_七步双环.md",
+      "kind": "原始方法正文",
+      "read_scope": "全文",
+      "reviewed_on": "2026-09-26",
+      "source_mtime": "2026-07-30T11:14:14",
+      "sha256": "4db663bf59d6879259db9da39156f6ef0265e104b2c3c421af319c9139a34788",
+      "modules": [
+        "K09"
+      ]
+    },
+    {
+      "id": "S22",
+      "path": "D:/BaiduSyncdisk/wiki/concepts/CEO教练.md",
+      "kind": "主题导航",
+      "read_scope": "全文",
+      "reviewed_on": "2026-09-26",
+      "source_mtime": "2026-08-24T23:30:57",
+      "sha256": "f35205feba188670d0bdbf93e2347d24a7a5b5ed2331d6643eeb474ddb98ed2a",
+      "modules": [
+        "K09"
+      ]
+    },
+    {
+      "id": "S23",
+      "path": "D:/BaiduSyncdisk/wiki/concepts/AI与数字化经营.md",
+      "kind": "概念与导航",
+      "read_scope": "全文；报告清单未逐份读取",
+      "reviewed_on": "2026-09-26",
+      "source_mtime": "2026-08-24T23:36:32",
+      "sha256": "dc329e33c479e5638928913b666321df7124f379f15097bd612e1719137a5031",
+      "modules": [
+        "K09"
+      ]
+    },
+    {
+      "id": "S24",
+      "path": "D:/BaiduSyncdisk/wiki/sources/ML50-001-精力管理的金字塔.md",
+      "kind": "图卡转译",
+      "read_scope": "全文；源张遇升，制李坤",
+      "reviewed_on": "2026-09-26",
+      "source_mtime": "2026-09-13T10:24:37",
+      "sha256": "0e1902c9c0c92938326b6c93ec1d121e935611bc38b6729cf75ae14caea0932d",
+      "modules": [
+        "K10"
+      ]
+    },
+    {
+      "id": "S25",
+      "path": "D:/BaiduSyncdisk/wiki/sources/ML50-003-非暴力沟通.md",
+      "kind": "图卡转译",
+      "read_scope": "全文；源卢森堡，制李坤",
+      "reviewed_on": "2026-09-26",
+      "source_mtime": "2026-09-13T10:24:37",
+      "sha256": "dc9e52548fa068da75b9e2ecb6d25186599b290a2a4000d52649002cdaaf1893",
+      "modules": [
+        "K10"
+      ]
+    },
+    {
+      "id": "S26",
+      "path": "D:/BaiduSyncdisk/wiki/tool/人生设计术.md",
+      "kind": "工具正文",
+      "read_scope": "全文",
+      "reviewed_on": "2026-09-26",
+      "source_mtime": "2026-09-12T19:23:03",
+      "sha256": "69d9f03e069ea984f0a70333712ac4e0900edfa129b4e05a5656cabd88f0979a",
+      "modules": [
+        "K10"
+      ]
+    },
+    {
+      "id": "S27",
+      "path": "D:/BaiduSyncdisk/wiki/tool/改变日记.md",
+      "kind": "工具整理",
+      "read_scope": "全文",
+      "reviewed_on": "2026-09-26",
+      "source_mtime": "2026-08-24T18:53:00",
+      "sha256": "07b3e5d1eb1df76b390b5359ace7e702f2656c9cb4fe86d877a4d1423a338211",
+      "modules": [
+        "K10"
+      ]
+    },
+    {
+      "id": "S28",
+      "path": "D:/BaiduSyncdisk/wiki/sources/ML50-048-费曼学习法.md",
+      "kind": "图卡转译",
+      "read_scope": "全文；图卡署名不作历史考证",
+      "reviewed_on": "2026-09-26",
+      "source_mtime": "2026-09-13T10:24:38",
+      "sha256": "e757a7cef9005bb190cecafc6eb38b8384106f624db8aacafeb20102db99f2a0",
+      "modules": [
+        "K10"
+      ]
+    }
+  ]
+}

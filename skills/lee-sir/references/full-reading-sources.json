@@ -1,0 +1,169 @@
+{
+  "reviewed_on": "2026-09-27",
+  "sources": [
+    {
+      "id": "FR01",
+      "path": "D:/BaiduSyncdisk/raw/07 C无限游戏/8.0学年·灵感流淌/期末论文/8.0_个人期末论文_合肥3班白也.docx",
+      "source_date": "2026-06-20",
+      "evidence_type": "本人署名自述；结果为自报",
+      "read_scope": "正文全文；无嵌入媒体",
+      "reviewed_on": "2026-09-27",
+      "sha256": "74471c2c32d5838405a55fb324101d80a2ae0ed2a859eb4c5000ef434f600a10"
+    },
+    {
+      "id": "FR02",
+      "path": "D:/BaiduSyncdisk/raw/01 连锁智库/01 连锁学习/个人剖析/李坤的管理系统丨12月27日-2025年12月28日-来自【Get 笔记】.docx",
+      "source_date": "2025-12-28",
+      "evidence_type": "多版本AI画像，含推断/测评/命理",
+      "read_scope": "文本正文；不采用人格、医学因果和自定阈值",
+      "reviewed_on": "2026-09-27",
+      "sha256": "b783bde088e8e776a370153acf81ec83c2711091157a9443bc1e81505de3063d"
+    },
+    {
+      "id": "FR03",
+      "path": "D:/BaiduSyncdisk/raw/08 韵糖居/营运管理/新人培训首次沟通内容（李坤版本参考）.docx",
+      "source_date": "正文未明确",
+      "evidence_type": "内部参考沟通稿；历史经营数未核实",
+      "read_scope": "正文全文；无嵌入媒体",
+      "reviewed_on": "2026-09-27",
+      "sha256": "c7aaf321305f147201ac253cf9c8f240877675390a8689213992721e475cd181",
+      "availability_checked_on": "2026-09-27",
+      "availability": "original_missing; historical review retained; wiki derivative is not original"
+    },
+    {
+      "id": "FR04",
+      "path": "D:/BaiduSyncdisk/raw/02 个人资料集/01 个人资料/04 阅读·记/李坤年度阅读成果复盘2022/年度阅读复盘.pptx",
+      "source_date": "2022年度",
+      "evidence_type": "阅读清单；不证明观点认同和能力",
+      "read_scope": "幻灯片/备注文字；6项嵌入媒体未视觉读取",
+      "reviewed_on": "2026-09-27",
+      "sha256": "f1615e6df96806340046f45a7d3457fa204873bf99bbda6b441e0764bc5120ea"
+    },
+    {
+      "id": "FR05",
+      "path": "D:/BaiduSyncdisk/raw/07 C无限游戏/C立方·零一级架构/C立方公约系统化修订与公约府试点落地方案_V0.1_白也.docx",
+      "source_date": "2026-08-25",
+      "evidence_type": "建议稿非生效规则，版本标记冲突",
+      "read_scope": "正文全文；底层引用资料未全部核验",
+      "reviewed_on": "2026-09-27",
+      "sha256": "8bc7104ab103fe7e88f0fa17be0e4fd30272f58198f378a255b267ebaf4d2332"
+    },
+    {
+      "id": "FR06",
+      "path": "D:/BaiduSyncdisk/raw/02 个人资料集/06 塔斯汀/90_原始收件箱_飞书待精分/客户管理部-李坤转正述职【加盟管理中心】.pdf",
+      "source_date": "正文含2024工作节点",
+      "evidence_type": "本人述职自报，非业绩审计",
+      "read_scope": "12页文本层逐页读取；图表视觉细节未核验",
+      "reviewed_on": "2026-09-27",
+      "sha256": "110ac470494544af718a9a3a28d1bad88faca9da58fbc08e7ece0157abbd0421"
+    },
+    {
+      "id": "FR07",
+      "path": "D:/BaiduSyncdisk/raw/01 连锁智库/02 公众号更新/0037_5分钟连锁模型09 良性退出机制如何优雅的处理闭店危机.md",
+      "source_date": "抓取2026-07-31",
+      "evidence_type": "署名Lee连锁智库文章；示例非已核实实绩",
+      "read_scope": "Markdown正文全文；引用图片未视觉读取",
+      "reviewed_on": "2026-09-27",
+      "sha256": "0cbdcdb911dfc00d4db0dac515648c40d163b1d8e5ac040304a0c0901c6bf19d"
+    },
+    {
+      "id": "FR08",
+      "path": "D:/BaiduSyncdisk/raw/01 连锁智库/02 公众号更新/0039_5分钟连锁模型07 督导训练体系教练式督导为何成为生意顾问.md",
+      "source_date": "抓取2026-07-31",
+      "evidence_type": "署名Lee连锁智库文章；含绝对化修辞",
+      "read_scope": "Markdown正文全文；引用图片未视觉读取",
+      "reviewed_on": "2026-09-27",
+      "sha256": "76c8d8514a96a69a8f187742a2ff1f2ce614d22f9a7625c9ae17655387583e0c"
+    },
+    {
+      "id": "FR09",
+      "path": "D:/BaiduSyncdisk/raw/01 连锁智库/02 公众号更新/0046_5分钟连锁模型04 训练体系连锁训练本质是刻意练习.md",
+      "source_date": "抓取2026-07-31",
+      "evidence_type": "署名Lee连锁智库文章；比例非默认门槛",
+      "read_scope": "Markdown正文全文；引用图片未视觉读取",
+      "reviewed_on": "2026-09-27",
+      "sha256": "1f32d70aaced3964331fa2b3e4b984430d9cebb4ff8b9f59faa254b7195dc4e5"
+    },
+    {
+      "id": "FR10",
+      "path": "D:/BaiduSyncdisk/raw/02 个人资料集/06 塔斯汀/02_加盟管理中心建设/加盟管理中心/加委运作机制建设经验丨10月.md",
+      "source_date": "标题10月，年份未明",
+      "evidence_type": "历史组织方法；MVP段明确第三方经验",
+      "read_scope": "Markdown正文全文；外部链接不等于已读",
+      "reviewed_on": "2026-09-27",
+      "sha256": "f95d894cd51427bc2e31f91168dfbd0cca63938125ff64e448ba05b937f5f56f"
+    },
+    {
+      "id": "FR11",
+      "path": "D:/BaiduSyncdisk/raw/01 连锁智库/02 公众号更新/0154_罗胖罗永浩都在玩的承诺游戏连锁加盟里藏着怎样的秘密.md",
+      "source_date": "抓取2026-07-31",
+      "evidence_type": "本人署名文章；历史承诺观，不覆盖当前排序",
+      "read_scope": "Markdown正文全文；图片未视觉读取",
+      "reviewed_on": "2026-09-27",
+      "sha256": "3ab51f6822db7fa5be08dd14f33c8d6d481f3bbdb34f60d31da71852be75a243"
+    },
+    {
+      "id": "FR12",
+      "path": "D:/BaiduSyncdisk/raw/02 个人资料集/02 经营投资/00 已完结项目/02 淮蓝香项目/淮蓝香现有情况及发展需求-2025.03.docx",
+      "source_date": "2025-03",
+      "evidence_type": "需求/背景稿，非现状审计",
+      "read_scope": "DOCX正文全文",
+      "reviewed_on": "2026-09-27",
+      "sha256": "2d6f47b7ae5d018eae457fdc40b0a1a2e77074689cc809cf3227fd2b0ed66293"
+    },
+    {
+      "id": "FR13",
+      "path": "D:/BaiduSyncdisk/raw/02 个人资料集/02 经营投资/00 已完结项目/02 淮蓝香项目/淮蓝香2025年全案陪跑方案丨3月.md",
+      "source_date": "2025-03",
+      "evidence_type": "全案建议与占位指标，非完成/签约证明",
+      "read_scope": "Markdown正文全文；外链图片未读取；授权链接参数不入默认上下文",
+      "reviewed_on": "2026-09-27",
+      "sha256": "31403a6250a1d0b69cb38a602c62b66bba6ba3987427920414be1e145fe386fe"
+    },
+    {
+      "id": "FR14",
+      "path": "D:/BaiduSyncdisk/raw/01 连锁智库/02 公众号更新/0161_时间管理新视角连锁系统如何剥夺加盟商余闲.md",
+      "source_date": "抓取2026-07-31；非确认发表日期",
+      "evidence_type": "本人署名文章；时间余闲与局部探索",
+      "read_scope": "Markdown正文全文；引用图片未视觉读取；外部引文未独立核验",
+      "reviewed_on": "2026-09-27",
+      "sha256": "cffd6adb7d7daffcb9b7577b32fec746b2e4012ff122d9fa5417c12f0e2a2b83"
+    },
+    {
+      "id": "FR15",
+      "path": "D:/BaiduSyncdisk/raw/01 连锁智库/02 公众号更新/0164_从好友困境看加盟连锁小抱怨背后的大危机.md",
+      "source_date": "抓取2026-07-31；非确认发表日期",
+      "evidence_type": "本人署名文章；情绪支持与投诉信号",
+      "read_scope": "Markdown正文全文；引用图片未视觉读取；外部引文未独立核验",
+      "reviewed_on": "2026-09-27",
+      "sha256": "e3682d7636663e4f0dbf300361d3d28947c2e73d5248b3744c7c580d190f1927"
+    },
+    {
+      "id": "FR16",
+      "path": "D:/BaiduSyncdisk/raw/01 连锁智库/02 公众号更新/0151_连锁加盟的护城河从来不是一本完美的SOP而是.md",
+      "source_date": "抓取2026-07-31；非确认发表日期",
+      "evidence_type": "本人署名文章；标准边界与学习更新",
+      "read_scope": "Markdown正文全文；引用图片未视觉读取；外部引文未独立核验",
+      "reviewed_on": "2026-09-27",
+      "sha256": "137c0a0cc4158a5e2e50d7c3ca0b91598c7fe0ab63c1effb5b40c9129a08d0fc"
+    },
+    {
+      "id": "FR17",
+      "path": "D:/BaiduSyncdisk/raw/01 连锁智库/02 公众号更新/0131_重读毛选实事求是告别红利幻想构建利他模型.md",
+      "source_date": "抓取2026-07-31；非确认发表日期",
+      "evidence_type": "本人署名读书反思；数据行动与组织信心",
+      "read_scope": "Markdown正文全文；引用图片未视觉读取；外部引文未独立核验",
+      "reviewed_on": "2026-09-27",
+      "sha256": "360c7cb0462c38fafb49fcf07b8d9a22e10d49ceaea7671e597ae281dda15520"
+    },
+    {
+      "id": "FR18",
+      "path": "D:/BaiduSyncdisk/raw/01 连锁智库/02 公众号更新/0173_管不好加盟商学学绝味拆解加盟商委员会成功的4大权力密码.md",
+      "source_date": "抓取2026-07-31；非确认发表日期",
+      "evidence_type": "本人署名方法文章；权力组合，品牌案例未独立核验",
+      "read_scope": "Markdown正文全文；引用图片未视觉读取；外部引文未独立核验",
+      "reviewed_on": "2026-09-27",
+      "sha256": "c38f434ec761c2bafde6757278a25dd610db3342405cfe2f2908ed3f57de44d2"
+    }
+  ]
+}
