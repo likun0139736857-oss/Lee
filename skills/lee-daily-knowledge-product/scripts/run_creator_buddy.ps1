@@ -1,4 +1,4 @@
-param(
+﻿param(
   [Parameter(Mandatory = $true)][string]$OutputDirectory,
   [string]$RunDate = (Get-Date -Format 'yyyy-MM-dd')
 )
@@ -32,4 +32,3 @@ $dayDirectory = Join-Path $OutputDirectory $RunDate
   data_json = (Join-Path $dayDirectory 'data.json')
   report_html = (Join-Path $dayDirectory 'report.html')
 } | ConvertTo-Json -Compress
-

@@ -1,4 +1,4 @@
-"""Prepare Lee's topic radar from Creator Buddy discovery data."""
+"""Merge Creator Buddy signals with account-level WeChat retrieval."""
 
 from __future__ import annotations
 
@@ -84,7 +84,12 @@ def mark_candidate(
     window, window_reason = _content_window(
         item.get("publicTime", ""), run_date, is_enterprise_case
     )
-    account_name = str(item.get("accountName", "") or "")
+    account_name = str(
+        item.get("accountName")
+        or item.get("userName")
+        or item.get("accountId")
+        or ""
+    )
     priority_account = match_priority_account(account_name, source_pool)
 
     if excluded:
@@ -107,6 +112,7 @@ def mark_candidate(
 
     return {
         "title": item.get("title", ""),
+        "summary": item.get("summary", ""),
         "matched_keyword": item.get("matchedKeyword", ""),
         "account_name": account_name,
         "priority_account": priority_account,
@@ -114,7 +120,16 @@ def mark_candidate(
         "topic_type": "enterprise_case" if is_enterprise_case else "topic_signal",
         "content_window": window,
         "published_at": item.get("publicTime", ""),
-        "source_url": item.get("oriUrl") or item.get("noteLink", ""),
+        "source_url": (
+            item.get("oriUrl")
+            or item.get("noteLink")
+            or item.get("source_url")
+            or item.get("sogou_result_url")
+            or ""
+        ),
+        "source_backend": item.get("source_backend", "creator_buddy"),
+        "coverage_level": item.get("coverage_level", "topic_hot_pool"),
+        "content_available": bool(item.get("content_available", False)),
         "verification_required": True,
         "relevance_status": status,
         "relevance_reasons": reasons,
@@ -151,11 +166,59 @@ def _apply_account_cap(candidates: list[dict], source_pool: dict) -> None:
             )
 
 
+def _account_radar_candidates(
+    account_radar: dict,
+    config: dict,
+    source_pool: dict,
+    run_date: date,
+) -> list[dict]:
+    candidates = []
+    for account in account_radar.get("accounts", []):
+        canonical = str(account.get("canonical_name") or "")
+        for article in account.get("articles", []):
+            raw_item = {
+                "title": article.get("title", ""),
+                "summary": article.get("summary")
+                or str(article.get("body_text", ""))[:500],
+                "matchedKeyword": "",
+                "accountName": article.get("account_name") or canonical,
+                "publicTime": article.get("published_at", ""),
+                "source_url": article.get("source_url", ""),
+                "sogou_result_url": article.get("sogou_result_url", ""),
+                "source_backend": article.get("source_backend", ""),
+                "coverage_level": article.get(
+                    "coverage_level", account.get("coverage_status", "")
+                ),
+                "content_available": article.get(
+                    "content_available", False
+                ),
+            }
+            marked = mark_candidate(
+                raw_item, config, source_pool, run_date
+            )
+            marked["sector"] = "重点公众号"
+            marked["retrieval_account"] = canonical
+            candidates.append(marked)
+    return candidates
+
+
+def _ordered_account_names(
+    values: list[object], configured_accounts: list[str]
+) -> list[str]:
+    normalized = {_normalize_name(value) for value in values if value}
+    return [
+        account
+        for account in configured_accounts
+        if _normalize_name(account) in normalized
+    ]
+
+
 def prepare_topic_radar(
     source_data: dict,
     config: dict,
     source_pool: dict,
     run_date: str | None = None,
+    account_radar: dict | None = None,
 ) -> dict:
     effective_run_date = _parse_date(run_date or source_data.get("reportDate"))
     if effective_run_date is None:
@@ -171,6 +234,15 @@ def prepare_topic_radar(
                 matched_accounts.add(marked["priority_account"])
             candidates.append(marked)
 
+    if account_radar is not None:
+        account_candidates = _account_radar_candidates(
+            account_radar, config, source_pool, effective_run_date
+        )
+        for item in account_candidates:
+            if item["priority_account"]:
+                matched_accounts.add(item["priority_account"])
+        candidates = [*account_candidates, *candidates]
+
     candidates = _dedupe(candidates)
     _apply_account_cap(candidates, source_pool)
 
@@ -179,24 +251,75 @@ def prepare_topic_radar(
         for account in source_pool.get("priority_accounts", [])
         if account.get("canonical_name")
     ]
-    return {
-        "candidates": candidates,
-        "source_coverage": {
-            "matched": [
-                account for account in configured_accounts if account in matched_accounts
-            ],
-            "missing": [
-                account for account in configured_accounts if account not in matched_accounts
-            ],
-        },
-    }
+    if account_radar is not None:
+        supplied_coverage = account_radar.get("coverage", {})
+        confirmed = _ordered_account_names(
+            supplied_coverage.get("confirmed", []), configured_accounts
+        )
+        partial = _ordered_account_names(
+            supplied_coverage.get("partial", []), configured_accounts
+        )
+        unavailable = _ordered_account_names(
+            supplied_coverage.get("unavailable", []), configured_accounts
+        )
+        matched = _ordered_account_names(
+            supplied_coverage.get("matched", []), configured_accounts
+        )
+        current_matched = _ordered_account_names(
+            supplied_coverage.get("current_matched", []),
+            configured_accounts,
+        )
+        classified = {*confirmed, *partial, *unavailable}
+        unavailable.extend(
+            account
+            for account in configured_accounts
+            if account not in classified
+        )
+        not_confirmed = [
+            account
+            for account in configured_accounts
+            if account not in confirmed
+        ]
+        source_coverage = {
+            "coverage_basis": "account_retrieval",
+            "confirmed": confirmed,
+            "partial": partial,
+            "unavailable": unavailable,
+            "matched": matched,
+            "current_matched": current_matched,
+            "not_confirmed": not_confirmed,
+            "missing": not_confirmed,
+        }
+    else:
+        matched = [
+            account
+            for account in configured_accounts
+            if account in matched_accounts
+        ]
+        missing = [
+            account
+            for account in configured_accounts
+            if account not in matched_accounts
+        ]
+        source_coverage = {
+            "coverage_basis": "creator_buddy_hot_pool_only",
+            "confirmed": [],
+            "partial": matched,
+            "unavailable": missing,
+            "matched": matched,
+            "current_matched": [],
+            "not_confirmed": configured_accounts,
+            "missing": missing,
+        }
+    return {"candidates": candidates, "source_coverage": source_coverage}
 
 
 if __name__ == "__main__":
-    if len(sys.argv) not in {5, 6}:
+    if len(sys.argv) not in {5, 6, 7}:
         raise SystemExit(
             "Usage: prepare_topic_radar.py <data.json> <topic-config.json> "
-            "<source-pool.json> <output.json> [run-date]"
+            "<source-pool.json> <output.json> [run-date] "
+            "[wechat-account-radar.json]"
         )
     source_path = pathlib.Path(sys.argv[1])
     config_path = pathlib.Path(sys.argv[2])
@@ -205,15 +328,23 @@ if __name__ == "__main__":
     source = json.loads(source_path.read_text(encoding="utf-8"))
     config = json.loads(config_path.read_text(encoding="utf-8"))
     source_pool = json.loads(source_pool_path.read_text(encoding="utf-8"))
+    account_radar = (
+        json.loads(pathlib.Path(sys.argv[6]).read_text(encoding="utf-8"))
+        if len(sys.argv) == 7
+        else None
+    )
     output_path.parent.mkdir(parents=True, exist_ok=True)
     output_path.write_text(
         json.dumps(
             prepare_topic_radar(
-                source, config, source_pool, sys.argv[5] if len(sys.argv) == 6 else None
+                source,
+                config,
+                source_pool,
+                sys.argv[5] if len(sys.argv) >= 6 else None,
+                account_radar,
             ),
             ensure_ascii=False,
             indent=2,
         ),
         encoding="utf-8",
     )
-

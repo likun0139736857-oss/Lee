@@ -58,4 +58,3 @@ if __name__ == "__main__":
         print("\n".join(problems))
         raise SystemExit(1)
     print("VALID")
-

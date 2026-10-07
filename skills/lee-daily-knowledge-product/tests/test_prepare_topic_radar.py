@@ -221,7 +221,65 @@ class TopicRadarTests(unittest.TestCase):
         self.assertIn("红餐网", coverage["missing"])
         self.assertNotIn("L先生说", coverage["missing"])
 
+    def test_merges_account_radar_and_preserves_coverage_levels(self):
+        data = {"sectors": []}
+        account_radar = {
+            "accounts": [
+                {
+                    "canonical_name": "红餐网",
+                    "coverage_status": "partial",
+                    "articles": [
+                        {
+                            "title": "餐饮连锁品牌增长复盘",
+                            "summary": "门店与供应链案例",
+                            "account_name": "红餐网",
+                            "published_at": "2026-07-17T08:00:00+08:00",
+                            "sogou_result_url": "https://weixin.sogou.com/link?url=test",
+                            "source_backend": "sogou_wechat",
+                            "coverage_level": "partial",
+                            "content_available": False,
+                        }
+                    ],
+                }
+            ],
+            "coverage": {
+                "confirmed": [],
+                "partial": ["红餐网"],
+                "unavailable": [
+                    "笔记侠",
+                    "餐企老板内参",
+                    "咖门",
+                    "红餐智库",
+                    "混沌学园",
+                    "刘润",
+                    "L先生说",
+                    "晚点LatePost",
+                    "增长研习社",
+                ],
+                "matched": ["红餐网"],
+                "current_matched": ["红餐网"],
+            },
+        }
+
+        result = prepare_topic_radar(
+            data,
+            self.config,
+            self.source_pool,
+            "2026-07-17",
+            account_radar,
+        )
+        item = result["candidates"][0]
+        coverage = result["source_coverage"]
+
+        self.assertEqual(item["priority_account"], "红餐网")
+        self.assertEqual(item["source_backend"], "sogou_wechat")
+        self.assertEqual(item["coverage_level"], "partial")
+        self.assertEqual(item["relevance_status"], "candidate")
+        self.assertEqual(coverage["coverage_basis"], "account_retrieval")
+        self.assertEqual(coverage["partial"], ["红餐网"])
+        self.assertEqual(coverage["current_matched"], ["红餐网"])
+        self.assertIn("红餐网", coverage["not_confirmed"])
+
 
 if __name__ == "__main__":
     unittest.main()
-
