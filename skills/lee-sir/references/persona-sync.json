@@ -1,0 +1,7 @@
+{
+  "distribution": "public_redacted",
+  "content_date": "2026-10-15",
+  "full_private_sources_included": false,
+  "canonical_sources_role": "user_designated_local_only",
+  "note": "Public summaries must not be treated as full synchronized private sources; local sync regenerates them from authorized fixed files."
+}
